@@ -13,11 +13,11 @@ public class MinhaLinha {
 	public MinhaLinha(int x1, int y1, int x2, int y2, Color cor) {
 		
 		super();
-		this.x1 = x1;
-		this.y1 = y1;
-		this.x2 = x2;
-		this.y2 = y2;
-		this.cor = cor;
+		setX1(x1);
+		setY1(y1);
+		setX2(x2);
+		setY2(y2);
+		setCor(cor);
 		
 	}
 	
