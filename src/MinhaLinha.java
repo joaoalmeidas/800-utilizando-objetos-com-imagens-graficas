@@ -24,7 +24,7 @@ public class MinhaLinha {
 	public void desenha(Graphics g) {
 		
 		g.setColor(cor);
-		g.drawLine(x1, y1, x2, y2);
+		g.drawLine(getX1(), getY1(), getX2(), getX2());
 		
 	}
 

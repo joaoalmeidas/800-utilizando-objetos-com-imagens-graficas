@@ -13,12 +13,7 @@ public class MeuRetangulo {
 	
 	public MeuRetangulo() {
 		
-		setX1(0);
-		setY1(0);
-		setX2(0);
-		setY2(0);
-		setCor(Color.BLACK);
-		setPreenchido(false);
+		this(0, 0, 0, 0, false, Color.BLACK);
 		
 	}
 
@@ -34,7 +29,7 @@ public class MeuRetangulo {
 	
 	public void desenha(Graphics g) {
 		
-		g.setColor(cor);
+		g.setColor(getCor());
 		g.drawRect(retornaXCimaEsquerda(), retornaYCimaEsquerda(), retornaLargura(), retornaAltura());
 		
 		if(isPreenchido() == true) {
