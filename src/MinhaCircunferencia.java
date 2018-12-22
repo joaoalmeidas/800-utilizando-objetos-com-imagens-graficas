@@ -10,6 +10,17 @@ public class MinhaCircunferencia {
 	private boolean preenchido;
 	
 	private Color cor;
+	
+	public MinhaCircunferencia() {
+		
+		this.x1 = 0;
+		this.y1 = 0;
+		this.x2 = 0;
+		this.y2 = 0;
+		this.cor = Color.BLACK;
+		this.preenchido = false;
+		
+	}
 
 	public MinhaCircunferencia(int x1, int y1, int x2, int y2, boolean preenchido, Color cor) {
 		super();
