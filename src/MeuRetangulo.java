@@ -1,4 +1,5 @@
 import java.awt.Color;
+import java.awt.Graphics;
 
 public class MeuRetangulo {
 	
@@ -18,6 +19,17 @@ public class MeuRetangulo {
 		this.y2 = y2;
 		this.preenchido = preenchido;
 		this.cor = cor;
+	}
+	
+	public void desenha(Graphics g) {
+		
+		g.setColor(cor);
+		g.drawRect(retornaXCimaEsquerda(), retornaYCimaEsquerda(), retornaLargura(), retornaAltura());
+		
+		if(isPreenchido() == true) {
+			g.fillRect(retornaXCimaEsquerda(), retornaYCimaEsquerda(), retornaLargura(), retornaAltura());
+		}
+		
 	}
 	
 	public int retornaXCimaEsquerda() {

@@ -1,4 +1,5 @@
 import java.awt.Color;
+import java.awt.Graphics;
 
 public class MinhaCircunferencia {
 	
@@ -19,6 +20,18 @@ public class MinhaCircunferencia {
 		this.preenchido = preenchido;
 		this.cor = cor;
 	}
+	
+	public void desenha(Graphics g) {
+		
+		g.setColor(cor);
+		g.drawOval(retornaXCimaEsquerda(), retornaYCimaEsquerda(), retornaLargura(), retornaAltura());
+		
+		if(isPreenchido() == true) {
+			g.fillOval(retornaXCimaEsquerda(), retornaYCimaEsquerda(), retornaLargura(), retornaAltura());
+		}
+		
+	}
+	
 	
 	public int retornaXCimaEsquerda() {
 		return x1 < x2 ? x1 : x2;
