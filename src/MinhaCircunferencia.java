@@ -1,32 +1,26 @@
 import java.awt.Color;
-import java.awt.Graphics;
 
-public class MinhaLinha {
+public class MinhaCircunferencia {
 	
 	private int x1;
 	private int y1;
 	private int x2;
 	private int y2;
+	private boolean preenchido;
 	
 	private Color cor;
 
-	public MinhaLinha(int x1, int y1, int x2, int y2, Color cor) {
-		
+	public MinhaCircunferencia(int x1, int y1, int x2, int y2, boolean preenchido, Color cor) {
 		super();
 		this.x1 = x1;
 		this.y1 = y1;
 		this.x2 = x2;
 		this.y2 = y2;
+		this.preenchido = preenchido;
 		this.cor = cor;
-		
 	}
 	
-	public void desenha(Graphics g) {
-		
-		g.setColor(cor);
-		g.drawLine(x1, y1, x2, y2);
-		
-	}
+	
 
 	public int getX1() {
 		return x1;
@@ -60,6 +54,14 @@ public class MinhaLinha {
 		this.y2 = y2;
 	}
 
+	public boolean isPreenchido() {
+		return preenchido;
+	}
+
+	public void setPreenchido(boolean preenchido) {
+		this.preenchido = preenchido;
+	}
+
 	public Color getCor() {
 		return cor;
 	}
@@ -67,8 +69,6 @@ public class MinhaLinha {
 	public void setCor(Color cor) {
 		this.cor = cor;
 	}
-	
-	
 	
 	
 	
