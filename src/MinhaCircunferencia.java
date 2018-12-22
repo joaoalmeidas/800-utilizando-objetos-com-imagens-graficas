@@ -20,7 +20,21 @@ public class MinhaCircunferencia {
 		this.cor = cor;
 	}
 	
+	public int retornaXCimaEsquerda() {
+		return x1 < x2 ? x1 : x2;
+	}
 	
+	public int retornaYCimaEsquerda() {
+		return y1 < y2 ? y1 : y2;
+	}
+	
+	public int retornaAltura() {
+		return Math.abs(x1 - x2);
+	}
+	
+	public int retornaLargura() {
+		return Math.abs(y1 - y2);
+	}
 
 	public int getX1() {
 		return x1;
